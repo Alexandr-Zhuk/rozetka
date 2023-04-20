@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>Письмовий стіл у стилі Лофт L10 Дуб Сонома (50х80х75см) (S10D4508075)</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="top-line-banner">
+                <img src="../images/top-banner-pic.jpeg" alt="">
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="menu-pic">
+                            <img src="../images/menu-icon.png" alt="">
+                        </div>
+                        <div class="logo">
+                            <img src="../images/logo.svg" alt="Розетка лого">
+                        </div>
+                        <div class="catalog-button">
+                            
+                                <img src="../images/catalog-icon.png" alt="">
+                            
+                            <div class="cat-name">
+                                Каталог
+                            </div> 
+                        </div>
+                        <div class="search">
+                            <div class="search-cont">
+                                <input type="text" class="search-inp" placeholder="Я шукаю...">
+                                <div class="voice-search"></div>
+                            </div>
+                            <button type="submit" class="btn-search">Знайти</button>
+                        </div>
+                        <div class="language-switcher">
+                            <div class="lang-ru">RU</div>
+                            <div class="lang-ru">
+                                <img src="../images/flag-ua.svg" alt="">
+                                UA
+                            </div>
+                        </div>
+                        <div class="private-icon">
+                            <img src="../images/private-icon.png" alt="">
+                        </div>
+                        <div class="basket-icon">
+                            <img src="../images/basket-icon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+           
+
+            
+            <div class="breadcrums">
+                <div class="container">
+                    
+                    <ul class="breadcrums-list">
+                        <li class="breadcrums-item"><a href="#"></a></li>
+                        <% products.path.forEach((item) => { %>
+                            <li class="breadcrums-item"><a href="#"><%= item %></a></li>
+                        <%});%>
+                        
+                    </ul>
+                </div>
+            </div>
+            <h1 class="product-name">
+                <div class="container">
+                    <%= products.name %>
+                </div>
+            </h1>
+            <div class="stars-sku">
+                <div class="container">
+                    <div class="stars">
+                        <img src="../images/stars.png" alt="">
+                        <a href="#">1 відгук</a>
+                    </div>
+                    <div class="sku">
+                        Код:  <%= products.sku %>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="container">
+                    <ul class="tabs-list">
+                        <li class="tabs-item"><a href="">Усе про товар</a></li>
+                        <li class="tabs-item"><a href="">Характеристики</a></li>
+                        <li class="tabs-item"><a href="">Відгуки</a></li>
+                        <li class="tabs-item"><a href="">Поставити запитання</a></li>
+                        <li class="tabs-item"><a href="">Фото</a></li>
+                        <li class="tabs-item"><a href="">Купують разом</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="content-right-left">
+                        <div class="left-side-content">
+
+                        </div>
+                        <div class="right-side-content">
+                            <div class="about-product product-info-block">
+                                <div class="top-part">
+                                    <div class="price">
+                                        <%= products.price %> <span>₴</span>
+                                        <div class="little">Замовлення вiд 1 шт</div>
+                                    </div>
+                                    <button type="buton" class="to-basket">
+                                        <img src="../images/basket-icon.png" alt="">
+                                        Передзамовити
+                                    </button>
+                                    <div class="to-compare">
+                                        <img src="../images/compare-icon.png" alt="">
+                                    </div>
+                                    <div class="to-favorite">
+                                        <img src="../images/favorite-icon.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+                                    <p class="warn-info">
+                                        <img src="../images/warn-icon.png" alt=""> Товар доступний за попереднім замовленням. Термін доставки – від 14 днів
+                                    </p>
+                                    <p class="warn-info">
+                                        <img src="../images/warn-icon.png" alt=""> Передплата 50% вартості товару. Термін виготовлення протягом 14 днів. Адресна доставка по місту Дніпро - безкоштовна
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-seller product-info-block">
+                                <div class="top-part">
+                                    <div class="seller">
+                                        Продавець: <a href="#"><%= products.seller %></a>
+                                    </div>
+                                    <p class="rating">
+                                        <a href="#">
+                                            Недостатньо оцінок для формування рейтингу
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="bottom-part">
+                                   <div class="write-to-seller">
+                                        <a href="#"><img src="../images/write-to-seller-icon.png" alt="">Написати продавцю</a>
+                                   </div>
+                                   <div class="complane-to-product">
+                                        <a href="#"><img src="../images/complane-icon.png" alt=""> Поскаржитись на товар</a>
+                                   </div>
+                                   <div class="seller-page">
+                                        <a href="#"><img src="../images/seller-page-icon.png" alt=""> Сторінка продавця</a>  
+                                   </div>
+                                </div>
+                            </div>
+                            <div class="about-delivery product-info-block">
+                                <div class="top-part">
+                                    <div class="delivery-city">
+                                        Доставка в: <a href="#">Дніпро</a>
+                                    </div>
+                                </div>
+                                <div class="bottom-part">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
